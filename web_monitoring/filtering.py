@@ -41,7 +41,6 @@ def df_filter(df):
                             df.loc[index] = df.loc[index].replace(df.loc[index]['id'], 'Social Media')
                             df.loc[index] = df.loc[index].replace(df.loc[index]['priority'], 0.1)
                             df.loc[index] = df.loc[index].replace(df.loc[index]['annotation'], 'Repeated Changes')
-                    if (x.name == 'a'):
                         if (urlparse(x['href']).scheme == 'mailto'):
                             df.loc[index] = df.loc[index].replace(df.loc[index]['review'], 'no')
                             df.loc[index] = df.loc[index].replace(df.loc[index]['id'], 'Contact info')
